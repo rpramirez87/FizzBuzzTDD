@@ -17,6 +17,7 @@
 		D987CB801EECA7740040242B /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987CB7F1EECA7740040242B /* Brain.swift */; };
 		D9FEBB251EECC08100F0BE4A /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FEBB241EECC08100F0BE4A /* GameTests.swift */; };
 		D9FEBB271EECC0EC00F0BE4A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FEBB261EECC0EC00F0BE4A /* Game.swift */; };
+		D9FEBB291EEDE37700F0BE4A /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FEBB281EEDE37700F0BE4A /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D987CB7F1EECA7740040242B /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
 		D9FEBB241EECC08100F0BE4A /* GameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		D9FEBB261EECC0EC00F0BE4A /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		D9FEBB281EEDE37700F0BE4A /* ViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 			children = (
 				D987CB661EECA7480040242B /* FizzBuzzTDDTests.swift */,
 				D9FEBB241EECC08100F0BE4A /* GameTests.swift */,
+				D9FEBB281EEDE37700F0BE4A /* ViewControllerTests.swift */,
 				D987CB681EECA7480040242B /* Info.plist */,
 			);
 			path = FizzBuzzTDDTests;
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9FEBB291EEDE37700F0BE4A /* ViewControllerTests.swift in Sources */,
 				D987CB671EECA7480040242B /* FizzBuzzTDDTests.swift in Sources */,
 				D9FEBB251EECC08100F0BE4A /* GameTests.swift in Sources */,
 			);

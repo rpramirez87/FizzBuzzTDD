@@ -48,50 +48,62 @@ class GameTests: XCTestCase {
     
     func testIfFizzMoveIsRight() {
         game.score = 2
-        let result = game.play(move: "Fizz")
+        let result = game.play(move: "Fizz").isRightMove
         XCTAssertEqual(result, true)
     }
     
     func testIfFizzMoveIsWrong() {
         game.score = 1
-        let result = game.play(move: "Fizz")
+        let result = game.play(move: "Fizz").isRightMove
         XCTAssertEqual(result, false)
     }
     
     func testIfBuzzMoveIsRight() {
         game.score = 4
-        let result = game.play(move: "Buzz")
+        let result = game.play(move: "Buzz").isRightMove
         XCTAssertEqual(result, true)
     }
     
     func testIfBuzzMoveIsWrong() {
         game.score = 3
-        let result = game.play(move: "Buzz")
+        let result = game.play(move: "Buzz").isRightMove
         XCTAssertEqual(result, false)
     }
     
     func testIfFizzBuzzMoveIsRight() {
         game.score = 14
-        let result = game.play(move: "FizzBuzz")
+        let result = game.play(move: "FizzBuzz").isRightMove
         XCTAssertEqual(result, true)
     }
     
     func testIfFizzBuzzMoveIsWrong() {
         game.score = 13
-        let result = game.play(move: "FizzBuzz")
+        let result = game.play(move: "FizzBuzz").isRightMove
         XCTAssertEqual(result, false)
     }
     
     func testIfNumberMoveIsRight() {
         game.score = 0
-        let result = game.play(move: "1")
+        let result = game.play(move: "1").isRightMove
         XCTAssertEqual(result, true)
     }
     
     func testIfNumberMoveIsWrong() {
         game.score = 2
-        let result = game.play(move: "3")
+        let result = game.play(move: "3").isRightMove
         XCTAssertEqual(result, false)
+    }
+    
+    //Test score and move right/wrong
+    
+    func testPlayShouldReturnIfMoveRight() {
+        let response = game.play(move: "1")
+        XCTAssertNotNil(response.isRightMove)
+    }
+    
+    func testPlayShouldReturnNewScore() {
+        let response = game.play(move: "1")
+        XCTAssertNotNil(response.score)
     }
     
 
